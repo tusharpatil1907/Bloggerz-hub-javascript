@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px;     */
+}
+.button{
+    padding: 15px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+
+}
