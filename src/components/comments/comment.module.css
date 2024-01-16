@@ -1,0 +1,83 @@
+.container{
+    margin-top: 70px;
+
+}
+
+.title{
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+.loginLink{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    /* justify-content: center; */
+    margin: 30px 0;
+    
+}
+.title{
+    color: var(--softTextColor);
+}
+
+.Write{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.input{
+    padding: 20px;
+    width: 100%;
+}
+.submit{
+    padding: 20px;
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.user{
+    margin-top: 50px;
+    /* padding: 50px 0; */
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.userImageContainer{
+    width: 60px;
+    height:60px;
+    /* position: relative; */
+    object-fit: cover;
+}
+.userImage{
+   border-radius: 50px;
+    object-fit: cover;
+}
+.userTextContainer{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.description{
+    margin-top: 30px;
+}
+
+
+
+@media  screen and (max-width:1024px) {
+   .user{
+    margin-top: 20px;
+   }
+}
+@media  screen and (max-width:480px) {
+
+   .user{
+    margin-top: 20px;
+    font-size: 12px;
+   }
+}

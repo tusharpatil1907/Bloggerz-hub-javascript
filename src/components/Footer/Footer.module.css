@@ -20,13 +20,15 @@
     flex:2;
 }
 
-/* .socialLinks{
-    padding: 20px 0px;
+.socialLinks{
+
+    
+    padding: 10px 0px;
     
 }
 .socialLink{
-    margin-right: 20px;
-} */
+    margin-right: 10px;
+}
 .impLinks{
     display: flex;
     font-size: 20px;
@@ -51,5 +53,14 @@
         flex-direction: column;
         align-items: center;
         
+    }
+    .socialLinks{
+        display: flex;
+        
+    }
+}
+@media  screen and (max-width:480px) {
+    .links{
+        padding: 0px;
     }
 }
