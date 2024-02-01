@@ -8,7 +8,7 @@ import 'react-quill/dist/quill.bubble.css'
 function page() {
     const [open,setopen] = useState(false)
     const [value,setvalue] = useState('')
-  return (
+  return (  
     <div className={styles.container}>
         <input type="text" name="" className={styles.input} placeholder='Title' />
         <div className={styles.editor}>
@@ -30,9 +30,9 @@ function page() {
             )}
 
 
-            <ReactQuill className={styles.textArea} theme='bubble' onChange={setvalue} placeholder='Your Text here'/>
+            <ReactQuill className={styles.textArea} theme='bubble' value={value} onChange={setvalue} placeholder='Your Text here'/>
         </div>
-        <button>Publish</button>
+        <button className={styles.publish}>Publish</button>
     </div>
   )
 }

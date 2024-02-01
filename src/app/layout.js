@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer/Footer'
 import { ThemeContextProvider } from './context/ThemeContext'
 import ThemeProvider from './poviders/themeProvider'
+import AuthProviders from './poviders/authProviders'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -19,6 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       <body className={inter.className}>
+        <AuthProviders>
+
         <ThemeContextProvider>
           <ThemeProvider>
 
@@ -32,6 +35,7 @@ export default function RootLayout({ children }) {
 
           </ThemeProvider>
         </ThemeContextProvider>
+        </AuthProviders>
       </body>
     </html>
   )
